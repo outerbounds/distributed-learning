@@ -1,0 +1,19 @@
+# Reference https://huggingface.co/docs/accelerate/en/package_reference/cli
+compute_environment: LOCAL_MACHINE
+debug: false
+deepspeed_config:
+  deepspeed_multinode_launcher: standard
+  offload_optimizer_device: none
+  offload_param_device: none
+  zero3_init_flag: true
+  zero3_save_16bit_model: true
+  zero_stage: 3
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+mixed_precision: bf16
+machine_rank: 0 # Overwritten on multi-node config
+num_machines: 1 # Overwritten on multi-node config
+num_processes: 8
+rdzv_backend: static # Overwritten on multi-node config
+same_network: true
+use_cpu: false

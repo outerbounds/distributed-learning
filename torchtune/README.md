@@ -15,7 +15,7 @@ This example demonstrates distributed training using Meta's TorchTune framework 
 
 ```
 torchtune/
-├── torchtune/
+├── full_finetuning/
 │   ├── distributed_ft_recipe.py    # TorchTune recipe for fine-tuning
 │   ├── h100_torchtune.py           # Metaflow flow definition
 │   ├── metaflow_tune_checkpointer.py # Custom checkpointing for TorchTune
